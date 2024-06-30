@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+#content {
+    position: absolute;
+    top: 40%;
+    width: 68%;
+    height: 90%;
+    left: 16%;
+    background-color:rgba(164, 0, 170, 0.295);
+    z-index: 1;
+}
+
+#headtitle {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    background-color:rgb(145, 0, 150);
+    z-index: 3;
+}
+
+#sectitle{
+    top: 49%;
+    right: 15%;
+}
+
+#normalwork{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    width: 66%;
+    height: 66%;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+#clue{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.5vw;
+    position: absolute;
+    top:63%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+    padding-right: 7%;
+    text-align: center;
+}
+
+::placeholder{
+    color: #ffee00;
+}
+
+.pwbox{
+    position:absolute;
+    left: 70%;
+    width: 17%;
+    height: 5%;
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.3vw;
+    text-align: center;
+    border-width: 0px 0px 4px 0px;
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.808);
+    border-color: #ffee00;
+}
+
+.pwbox:hover{
+    transition-duration: .5s;
+    width: 17.5%;
+    height: 5.5%;
+}
+
+#playernametag{
+    bottom:14%;
+}
+
+#calovacode{
+    bottom:7%;
+}
+
+#sendbtn{
+    position:absolute;
+    bottom:2%;
+    right:2%;
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    border-color: #0c0002;
+}
+
+#sendbtn:hover{
+    transition-duration: .5s;
+    font-size: 1.2vw;
+}
