@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#content{
+    position:absolute;
+    top:20%;
+    left:20%;
+    width: 60%;
+    height:75%;
+    background-color: brown;
+}
+
+#DreamonImg{
+    position:absolute;
+    top:10%;
+    right:0%;
+    width: 40%;
+}
+
+img{
+    width: 100%;
+    top:0%;
+}
+
+p{ font-family: 'Times New Roman', Times, bold;
+    font-size: 1.5vw;
+    position: relative;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+    text-align: left;
+    top:10%;
+    left: 5%;}
