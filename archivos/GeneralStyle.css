@@ -1,0 +1,586 @@
+﻿@charset "utf-8";
+
+body {
+    background-image: url(../imagenes/RavenEE.png);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 2.5vw;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+h3{
+    font-family: 'Times New Roman', Times, bold;
+    position: absolute;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+#header {
+    z-index: 5;
+    width: 100%;
+    height: 26%;
+    position: absolute;
+    background-color: rgb(236, 236, 236);
+    border-bottom: solid 1px #663399;
+    border-radius: 0px 0px 40px 40px;
+    top: 0%;
+    left: 0%;
+}
+
+#logo {
+    position: absolute;
+    left: 20%;
+    top: 3%;
+    width: 60%;
+    height: 56%;
+    z-index: 5;
+}
+
+
+#headermenu {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 35%;
+}
+
+#home {
+    left: 28%;
+    top: 0%;
+}
+
+#portfolio {
+    left: 38.25%;
+}
+
+#employee {
+    right: 28%;
+    border-width: 0px 0px 0px 0px;
+}
+
+#bannerspace{
+    top: 0%;
+    left:0%;
+    width:100%;
+    height:70%;
+    position: absolute;
+    margin-bottom:5%;
+}
+
+
+.banners{
+    position: absolute;
+    top: 0%;
+    left:0%;
+	animation-name: loop;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+    width: 100%;
+}
+
+#banner1{
+    animation-delay: 0s;
+    z-index: 3;
+}
+
+#banner2{
+    animation-delay: 6s;
+    z-index: 2;
+}
+
+#banner3{
+    animation-delay: 12s;
+    z-index: 1;
+}
+
+@keyframes loop {
+	0% {
+        opacity:0;
+    }
+	16.66% {
+        opacity:1
+    }
+	33.33% {
+        opacity:1
+    }
+	48.66% {
+        opacity:0
+    }
+	100% {
+        opacity:0; 
+    }
+}
+
+#contenthome{
+    position: absolute; 
+    background-color: #66339900;
+    height:100%;
+    width: 60%;
+    top:92.5%;
+    z-index:2;
+    left:20%;
+}
+
+#News{
+    position:absolute;
+    background-color: rgba(152, 255, 255, 0.096);
+    height:100%;
+    width: 35%;
+    top:5%;
+    z-index:2;
+    right:0%;
+}
+
+#New1{
+    top:12%;
+    left:5%;
+}
+
+#headline1{
+    top:31%;
+    left: 1%;
+    text-align:center;
+}
+
+#New2{
+    top:43%;
+    left:5%;
+}
+
+#headline2{
+    top:62%;
+    left: 13%;
+    text-align:center;
+}
+
+#New3{
+    top:71%;
+    left:5%;
+}
+
+#headline3{
+    top:90%;
+    left: 1.5%;
+    text-align:center;
+}
+
+#Info{
+    position:absolute;
+    background-color: rgba(255, 0, 0, 0.096);
+    height:100%;
+    width: 60%;
+    top:5%;
+    z-index:2;
+    left:0%;
+}
+
+#latest {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+
+#mainvidhome{
+    position:absolute;
+    left:5%;
+    top:18%;
+    width:90%;
+    height: 35%;
+}
+
+#fciar {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    text-align: center;
+}
+
+#par1 {
+    left: 5%;
+    top: 55%;
+}
+
+#Abt {
+    top: 67%;
+    left: 10%;
+    font-size: 1.5vw;
+}
+
+#par2 {
+    left: 5%;
+    top: 73%;
+}
+
+.homeparaf{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.1vw;
+    position: absolute;
+    width:90%;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+.sectitle{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 5.5vw;
+    position: absolute;
+    z-index: 4;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+#porttitle{
+    top: 50%;
+    right: 12%;
+}
+
+#archtitle{
+    top: 46%;
+    right: 15%;
+}
+
+#accstitle{
+    top: 49%;
+    right: 15%;
+}
+
+.headtitles{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 3;
+}
+
+#headtitleportfolio{
+    background-color:darkred;
+}
+
+#headtitlearchive{
+    background-color:rgb(0, 174, 180);
+}
+
+#headtitleemployee {
+    background-color:rgb(145, 0, 150);
+}
+
+.content{
+    position: absolute;  
+    top: 40%;
+}
+
+#contentportfolio {
+    width: 65%;
+    height: 90%;
+    left: 17.5%;
+    background-color: #ec426480;
+}
+
+#contentarchive{
+    left:20%;
+    width: 60%;
+    height:75%;
+}
+
+#contentemployee{
+    width: 68%;
+    height: 90%;
+    left: 16%;
+    background-color:rgba(164, 0, 170, 0.295);
+    z-index: 1;
+}
+
+.icons{
+    width: 12%;
+    height: 19%;
+    position:absolute;
+    left:10%;
+    transition: transform .1s ease-in-out;
+}
+
+.icons:hover{
+    width: 12.5%;
+    height: 19.5%;
+    position:absolute;
+    left:10%;
+    transform: rotate(3deg);
+}
+
+.menubuttons {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    padding: 15px 50px;
+    cursor: pointer;
+    border-width: 0px 1px 0px 0px;
+    border-right-color: #000000;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+    .menubuttons:hover {
+        transition-duration: .5s;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.7vw;
+        color: #ff0000;
+        padding: 15px 50px;
+        cursor: pointer;
+        border-width: 0px 1px 0px 0px;
+        border-right-color: #ff0000;
+        background-color: transparent;
+        z-index: 4;
+        position: absolute;
+    }
+
+.dreamonname{
+    font-size: 1vw;
+    text-align: center;
+    top:28%;
+    left: 34%;
+}
+
+#aerosmithref{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 5.5vw;
+    position: absolute;
+    top:50%;
+    right:12%;
+    z-index: 4;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+.ytlinks{
+    position: absolute;
+    width: 90%;
+    height: 21%;
+    border-radius: 8px;
+}
+
+.ytlinks:hover{
+    transition-duration: 0.5s;
+    width: 91%;
+    height: 22%;
+}
+
+#mainvidarchive{
+    position: absolute;
+    width:100%;
+    top:5%;
+}
+
+#vidspace{
+    position:absolute;
+    background-color: rgb(255, 0, 0);
+    height:60%;
+    width: 55%;
+    top:5%;
+    z-index:2;
+    right:5%;
+    border-radius: 10px;
+}
+
+#adracs{
+    top:10%;
+}
+
+#wtt{
+    top:32%;
+}
+
+#vaccine{
+    top:54%;
+}
+
+#redacted{
+    top:76%;
+}
+
+#redacted:hover{
+    top:76%;
+    cursor: pointer;
+}
+
+.producttitle{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.5vw;
+    position: absolute;
+    left:26%;
+    z-index: 4;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
+
+#icontitle1{
+    top:5%;
+}
+
+#icontitle2{
+    top:27%;
+}
+
+#icontitle3{
+    top:49%;
+}
+
+#icontitle4{
+    top:71%;
+}
+
+.itemdesc{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.1vw;
+    position: absolute;
+    left:23%;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+    padding-right: 7%;
+}
+
+#itemdesc1{
+    top:11%;
+}
+
+#itemdesc2{
+    top:35%;
+}
+
+#itemdesc3{
+    top:55%;
+}
+
+#itemdesc4{
+    top:77%;
+}
+
+.dicons{
+    position: absolute;
+    height: 100%;
+    left:5%;
+}
+
+#DreamonList{
+    position:absolute;
+    height:100%;
+    width: 35%;
+    top:5%;
+    z-index:2;
+    left:0%;
+}
+
+.entries{
+    position: absolute;
+    width: 100%;
+    height: 16.7%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 7px;
+    border-bottom: solid 4px #ffffff;
+    
+}
+
+.entries:hover{
+    transition: .5s;
+    width: 100%;
+    height: 17.7%;
+}
+
+#entry00{
+    top:0%;
+}
+
+#entry01{
+    top:19.7%;
+}
+
+#entry02{
+    top:39.4%;
+}
+
+#entry03{
+    top:59.1%;
+}
+
+#P2M{
+    left: 10%;
+}
+
+#Sheep{
+    top:8%;
+    left:2%;
+    height: 80%;
+}
+
+#normalwork{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    width: 66%;
+    height: 66%;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+#clue{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.5vw;
+    position: absolute;
+    top:63%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+    padding-right: 7%;
+    text-align: center;
+}
+
+::placeholder{
+    color: #ffee00;
+}
+
+.pwbox{
+    position:absolute;
+    left: 70%;
+    width: 17%;
+    height: 5%;
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.3vw;
+    text-align: center;
+    border-width: 0px 0px 4px 0px;
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.808);
+    border-color: #ffee00;
+}
+
+.pwbox:hover{
+    transition-duration: .5s;
+    width: 17.5%;
+    height: 5.5%;
+}
+
+#playernametag{
+    bottom:14%;
+}
+
+#calovacode{
+    bottom:7%;
+}
+
+#sendbtn{
+    position:absolute;
+    bottom:2%;
+    right:2%;
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    border-color: #0c0002;
+}
+
+#sendbtn:hover{
+    transition-duration: .5s;
+    font-size: 1.2vw;
+}
