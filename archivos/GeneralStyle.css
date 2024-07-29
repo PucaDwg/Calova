@@ -75,14 +75,6 @@ h3{
     z-index: 5;
 }
 
-.menubuttons {
-    color: #000; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-wrap: pretty;
-    white-space: nowrap;
-}
-
 #home {
     font-size: 30px;
 }
@@ -94,16 +86,32 @@ h3{
 #employee {
     font-size: 30px;
 }
+#home:hover,
+#portfolio:hover,
+#employee:hover {
+    font-size: 1.5rem;
+}
+
+/* Media query para pantallas con un ancho mínimo de 400px */
 @media screen and (min-width: 400px) {
-    #home{
+    #home {
         font-size: 15px;
     }
-    #portfolio{
+    #portfolio {
         font-size: 15px;
     }
-    #employee{
+    #employee {
         font-size: 15px;
         margin-left: 20px;
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+    #home:hover,
+    #portfolio:hover,
+    #employee:hover {
+        font-size: 1.1rem;
     }
 }
 
@@ -366,21 +374,21 @@ h3{
     position: absolute;
     z-index: 4;
     background-color: transparent;
+    color: #000; /* Color del texto */
+    text-align: center; /* Alineación del texto */
 }
 
-    .menubuttons:hover {
-        transition-duration: .3s;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.7dvw;
-        color: #ff0000;
-        padding: 15px 50px;
-        border-width: 0px 1px 0px 0px;
-        border-right-color: #ff0000;
-        background-color: transparent;
-        z-index: 4;
-        position: absolute;
-        cursor: pointer;
-    }
+.menubuttons:hover {
+    transition-duration: .5s;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff0000;
+    padding: 15px 50px;
+    border-width: 0px 1px 0px 0px;
+    border-right-color: #ff0000;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+}
 
 .dreamonname{
     font-size: 1vw;
