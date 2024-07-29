@@ -9,7 +9,13 @@ body {
     background-attachment: fixed;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
+div,ul,nav,header,a,li,label,input,body{
+    margin: 0;
+    padding: 0;
+}
+
 
 h2{
     font-family: 'Times New Roman', Times, bold;
@@ -24,11 +30,10 @@ h3{
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
-
 #header {
     z-index: 5;
-    width: 100vw;
-    height: 26%;
+    width: 100dvw;
+    height: 35%;
     position: absolute;
     background-color: rgb(236, 236, 236);
     border-bottom: solid 1px #663399;
@@ -37,28 +42,19 @@ h3{
     left: 0%;
 }
 
-#logo {
-    position: absolute;
-    left: 20%;
-    top: 3%;
-    width: 60%;
-    height: 56%;
-    z-index: 5;
-}
-
 #headermenu {
     position: absolute;
     bottom: 0%;
     left: 0%;
-    width: 100%;
-    height: 35%;
+    width: 100dvw;
+    height: 26%;
 }
 
 .headmenu {
     display: grid;
     grid-auto-rows: 150px;
     grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de tamaño automático */
+    grid-template-columns: repeat(3, 2fr); /* Crea tres columnas de tamaño automático */
     gap: 10px; /* Espacio entre los elementos */
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
     justify-items: center;
@@ -69,24 +65,46 @@ h3{
     white-space: nowrap;
 }
 
+
+#logo {
+    position: absolute;
+    left: 20%;
+    top: 3%;
+    width: 60%;
+    height: 56%;
+    z-index: 5;
+}
+
 .menubuttons {
     color: #000; /* Color del texto */
     text-align: center; /* Alineación del texto */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-wrap: wrap;
+    text-wrap: pretty;
     white-space: nowrap;
 }
 
 #home {
-    width: clamp(50px, 1fr, 200px);
+    font-size: 30px;
 }
 
 #portfolio {
-    width: clamp(50px, 1fr, 200px);
+    font-size: 30px;
 }
 
 #employee {
-    width: clamp(50px, 1fr, 200px);
+    font-size: 30px;
+}
+@media screen and (min-width: 400px) {
+    #home{
+        font-size: 15px;
+    }
+    #portfolio{
+        font-size: 15px;
+    }
+    #employee{
+        font-size: 15px;
+        margin-left: 20px;
+    }
 }
 
 #bannerspace{
@@ -361,6 +379,7 @@ h3{
         background-color: transparent;
         z-index: 4;
         position: absolute;
+        cursor: pointer;
     }
 
 .dreamonname{
