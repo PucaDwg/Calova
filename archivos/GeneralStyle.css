@@ -11,22 +11,16 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-div,ul,nav,header,footer,a,li,label,input,body{
+div,ul,nav,header,a,aside,main,li,label,input,body{
     margin: 0;
     padding: 0;
 }
 
 
-h2{
-    font-family: 'Times New Roman', Times, bold;
-    font-size: 2.5vw;
-    color: white;
-    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
-}
-
 h3{
     font-family: 'Times New Roman', Times, bold;
     position: absolute;
+    font-size: 18px;
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
@@ -89,14 +83,6 @@ h3{
     cursor: pointer;
 }
 
-/*#logo {
-    position: absolute;
-    left: 20%;
-    top: 3%;
-    width: 60%;
-    height: 56%;
-}
-*/
 .logo{
     width: 40%;
 }
@@ -112,7 +98,6 @@ h3{
     font-size: 1.8rem;
 }
 
-/* Media query para pantallas con un ancho máximo de 600px */
 @media screen and (max-width: 800px) {
     #home:hover,
     #portfolio:hover,
@@ -124,12 +109,15 @@ h3{
     #employee {
     font-size: 1.2rem;
     }
+    .headline{
+        font-size: 10px;
+    }
 }
 
 
 .bannerspace{
-    width:100%;
-    height: 70%;
+    width:100dvw;
+    height: 50dvh;
     position: relative;
     display: flex;
 }
@@ -137,11 +125,13 @@ h3{
 .banners{
     position: absolute;
     top: 0%;
-    left:0%;
+    left: 0%;
 	animation-name: loop;
 	animation-duration: 18s;
 	animation-iteration-count: infinite;
     width: 100%;
+    height: 100%;
+
 }
 
 #banner1{
@@ -180,19 +170,7 @@ h3{
     }
 }
 
-#contenthome{
-    position: relative; 
-    background-color: #66339900;
-    height:100%;
-    width: 60%;
-    top:92.5%;
-    z-index:2;
-    left:20%;
-}
 @media screen and (max-width: 600px) {
-    #contenthome{
-        height: 100dvh;
-    }
     #fciar{
         font-size: 20px;
     }
@@ -214,109 +192,112 @@ h3{
         font-size: 1.6rem;
     }
 }
-
-#News{
-    position:absolute;
+.News {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    right: 0;
+    margin-left: 10px;
     background-color: rgba(152, 255, 255, 0.096);
-    height:100%;
-    width: 35%;
-    top:5%;
-    z-index:2;
-    right:0%;
-}
-
-#New1{
-    top:12%;
-    left:5%;
-}
-
-#headline1{
-    top:31%;
-    left: 1%;
-    text-align:center;
-}
-
-#New2{
-    top:43%;
-    left:5%;
-}
-
-#headline2{
-    top:62%;
-    left: 13%;
-    text-align:center;
-}
-
-#New3{
-    top:71%;
-    left:5%;
-}
-
-#headline3{
-    top:90%;
-    left: 1.5%;
-    text-align:center;
-}
-
-#Info{
-    position:relative;
-    background-color: rgba(255, 0, 0, 0.096);
-    height:100dvh;
-    width: 60%;
-    top:5%;
-    z-index:2;
-    left:0%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-#latest {
-    position: absolute;
-    top: 0%;
-    left: 10%;
+.news-item {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
-#mainvidhome{
-    position: absolute;
-    left:5%;
-    top:18%;
-    width:90%;
-    height: 35%;
+.ytlinks {
+    width: 80%; /* Ajusta el tamaño de las imágenes si es necesario */
+    margin: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.ytlinks:hover{
+    transition-duration: 0.7s;
+    width: 95%;
+    height: 90%;
 }
 
-#fciar {
-    position: absolute;
-    top: 0%;
-    left: 5%;
+.latest {
     text-align: center;
+    height: 30%;
+    margin-left: 5px;
 }
-
-#par1 {
-    left: 5%;
-    top: 55%;
-}
-
-#Abt {
-    top: 67%;
-    left: 10%;
-    font-size: 1.5vw;
-}
-
-#par2 {
-    left: 5%;
-    top: 73%;
-}
-
-.homeparaf{
+.latest h2{
     font-family: 'Times New Roman', Times, bold;
-    font-size: 1.1vw;
+    font-size: 23px;
     position: absolute;
-    width:90%;
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
+.headline{
+    margin-left: 5px;
+    width: 70%;
+}
 
+.contenthome {
+    position: relative;
+    background-color: #66339900;
+    left: 20%;
+    width: 60%;
+    height: 100dvh;
+    margin-top: 10px;
+}
+
+.Info {
+    background-color: rgba(255, 0, 0, 0.096);
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    margin-right: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-item {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el contenido */
+    position: relative; /* Necesario para que los elementos absolutos dentro se posicionen correctamente */
+}
+
+#mainvidhome {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Mantiene la relación de aspecto del video */
+}
+
+#fciar {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.homeparaf {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 9px;
+    width: 90%;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+    text-align: justify;
+    margin: 10px 0;
+    position: relative; /* Cambiado a relativo para que funcione dentro del flujo del documento */
+}
+
+#Abt {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
 .sectitle{
     font-family: 'Times New Roman', Times, bold;
     font-size: 5.5vw;
@@ -426,23 +407,12 @@ h3{
     font-family: 'Times New Roman', Times, bold;
     font-size: 5.5vw;
     position: absolute;
-
     z-index: 4;
     color: white;
+    right: 0;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
-.ytlinks{
-    position: absolute;
-    width: 90%;
-    height: 21%;
-    border-radius: 8px;
-}
 
-.ytlinks:hover{
-    transition-duration: 0.5s;
-    width: 91%;
-    height: 22%;
-}
 
 #mainvidarchive{
     position: absolute;
