@@ -11,7 +11,7 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-div,ul,nav,header,a,li,label,input,body{
+div,ul,nav,header,footer,a,li,label,input,body{
     margin: 0;
     padding: 0;
 }
@@ -30,100 +30,109 @@ h3{
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
-#header {
-    z-index: 5;
-    width: 100dvw;
+.header {
+    width: 100%;
     height: 35%;
-    position: absolute;
+    position: relative;
+    display: flex;
     background-color: rgb(236, 236, 236);
     border-bottom: solid 1px #663399;
     border-radius: 0px 0px 40px 40px;
-    top: 0%;
-    left: 0%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.header-1{
+    z-index: 10;
 }
 
-#headermenu {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100dvw;
-    height: 26%;
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    height: 100%; /* Ajusta esto si necesitas que ocupe menos altura */
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between; /* Distribuye los elementos equitativamente */
+    align-items: center;
 }
-
 .headmenu {
-    display: grid;
-    grid-auto-rows: 150px;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, 2fr); /* Crea tres columnas de tamaño automático */
-    gap: 10px; /* Espacio entre los elementos */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    justify-items: center;
-    color: #000; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-wrap: wrap;
-    white-space: nowrap;
+    width: 100%;
 }
 
+.button {
+    list-style: none;
+    width: 88%;
+    padding: 20px;
+    text-align: center;
+}
 
-#logo {
+.button a{
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+.menubuttons {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.menubuttons:hover {
+    transition-duration: .5s;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff0000;
+    padding: 15px 50px;
+    border-width: 0px 1px 0px 0px;
+    border-right-color: #ff0000;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/*#logo {
     position: absolute;
     left: 20%;
     top: 3%;
     width: 60%;
     height: 56%;
-    z-index: 5;
+}
+*/
+.logo{
+    width: 40%;
 }
 
-#home {
-    font-size: 30px;
-}
-
-#portfolio {
-    font-size: 30px;
-}
-
+#home,
+#portfolio,
 #employee {
-    font-size: 30px;
+    font-size: 1.6rem;
 }
 #home:hover,
 #portfolio:hover,
 #employee:hover {
-    font-size: 1.5rem;
-}
-
-/* Media query para pantallas con un ancho mínimo de 400px */
-@media screen and (min-width: 400px) {
-    #home {
-        font-size: 15px;
-    }
-    #portfolio {
-        font-size: 15px;
-    }
-    #employee {
-        font-size: 15px;
-        margin-left: 20px;
-    }
+    font-size: 1.8rem;
 }
 
 /* Media query para pantallas con un ancho máximo de 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #home:hover,
     #portfolio:hover,
     #employee:hover {
-        font-size: 1.1rem;
+    font-size: 1.4rem;
+    }
+    #home,
+    #portfolio,
+    #employee {
+    font-size: 1.2rem;
     }
 }
 
-#bannerspace{
-    top: 0%;
-    left:0%;
-    width:100%;
-    height:70%;
-    position: absolute;
-    margin-bottom:5%;
-}
 
+.bannerspace{
+    width:100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+}
 
 .banners{
     position: absolute;
@@ -138,16 +147,19 @@ h3{
 #banner1{
     animation-delay: 0s;
     z-index: 3;
+    position: absolute;
 }
 
 #banner2{
     animation-delay: 6s;
     z-index: 2;
+    position: absolute;
 }
 
 #banner3{
     animation-delay: 12s;
     z-index: 1;
+    position: absolute;
 }
 
 @keyframes loop {
@@ -169,7 +181,7 @@ h3{
 }
 
 #contenthome{
-    position: absolute; 
+    position: relative; 
     background-color: #66339900;
     height:100%;
     width: 60%;
@@ -186,6 +198,20 @@ h3{
     }
     #latest{
         font-size: 22px;
+    }
+    #par1 {
+        font-size: 13px;
+    }
+    #par2{
+        font-size: 13px;
+    }
+    .header__nav-list{
+        flex-direction: column;
+    }
+    #home:hover,
+    #portfolio:hover,
+    #employee:hover {
+        font-size: 1.6rem;
     }
 }
 
@@ -235,13 +261,14 @@ h3{
 #Info{
     position:relative;
     background-color: rgba(255, 0, 0, 0.096);
-    height:100%;
+    height:100dvh;
     width: 60%;
     top:5%;
     z-index:2;
     left:0%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 #latest {
@@ -377,32 +404,6 @@ h3{
     transform: rotate(3deg);
 }
 
-.menubuttons {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5dvw;
-    padding: 15px 50px;
-    cursor: pointer;
-    border-width: 0px 1px 0px 0px;
-    border-right-color: #000000;
-    position: absolute;
-    z-index: 4;
-    background-color: transparent;
-    color: #000; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-}
-
-.menubuttons:hover {
-    transition-duration: .5s;
-    font-family: 'Times New Roman', Times, serif;
-    color: #ff0000;
-    padding: 15px 50px;
-    border-width: 0px 1px 0px 0px;
-    border-right-color: #ff0000;
-    background-color: transparent;
-    z-index: 10;
-    cursor: pointer;
-}
-
 .dreamonname{
     font-size: 1vw;
     text-align: center;
@@ -410,7 +411,7 @@ h3{
     left: 34%;
 }
 
-#aerosmithref{
+/*#aerosmithref{
     font-family: 'Times New Roman', Times, bold;
     font-size: 5.5vw;
     position: absolute;
@@ -420,7 +421,16 @@ h3{
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
 }
+*/
+#aerosmithref{
+    font-family: 'Times New Roman', Times, bold;
+    font-size: 5.5vw;
+    position: absolute;
 
+    z-index: 4;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
+}
 .ytlinks{
     position: absolute;
     width: 90%;
