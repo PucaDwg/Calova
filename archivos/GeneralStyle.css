@@ -282,11 +282,6 @@ h3{
     right: 12%;
 }
 
-#accstitle{
-    top: 49%;
-    right: 15%;
-}
-
 .headtitles{
     width: 100dvw;
     height: 25dvh;
@@ -322,12 +317,13 @@ h3{
 }
 
 #contentemployee{
-    width: 68%;
-    height: 90%;
+    border-radius: 10px;
+    width: 66dvw;
+    height: 10dvh;
     left: 16%;
     background-color:rgba(164, 0, 170, 0.295);
-    z-index: 1;
 }
+
 
 .icons{
     width: 12%;
@@ -517,34 +513,37 @@ h3{
 }
 
 #normalwork{
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 17%;
     width: 66%;
     height: 66%;
+    margin-top: 10px;
     z-index: 2;
     border-radius: 12px;
 }
 
 #clue{
     font-family: 'Times New Roman', Times, bold;
-    font-size: 1.5vw;
-    position: absolute;
-    top:63%;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: clamp(1.5rem,.5rem,.7rem);
+    position: relative;
+    text-wrap: pretty;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
-    padding-right: 7%;
     text-align: center;
 }
 
 ::placeholder{
     color: #ffee00;
 }
-
+#comprobation{
+    position: relative;
+    padding: 20px;
+}
 .pwbox{
-    position:absolute;
     left: 70%;
     width: 17%;
     height: 5%;
@@ -572,17 +571,48 @@ h3{
 }
 
 #sendbtn{
-    position:absolute;
-    bottom:2%;
-    right:2%;
+    position: absolute;
+    right: 0;
+    width: 17%;
+    margin-right: 10px;
+    color: #ffee00;
+    height: 30px;
     font-family: 'Times New Roman', Times, bold;
-    font-size: 1.3vw;
-    border-radius: 4px;
-    border-color: #0c0002;
+    font-size: 1.2vw;
+    text-align: center;
+    border-width: 0px 0px 4px 0px;
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.808);
+    border-color: #ffee00;
 }
+
+@media screen and (max-width: 800px) {
+    #contentemployee{
+        height: 15dvh;
+    }
+    .pwbox{
+        width: 25%;
+        height: 10dvh;
+    }
+    #sendbtn{
+        height: 10dvh;
+    }
+
+    #headtitleemployee{
+        height: 20dvh;
+    }
+    .pwbox:hover{
+        transition-duration: .5s;
+        font-size: 1vw;
+        width: 25%;
+        height: 10dvh;
+    }
+    
+}
+
 
 #sendbtn:hover{
     transition-duration: .5s;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
