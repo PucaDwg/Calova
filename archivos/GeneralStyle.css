@@ -119,7 +119,11 @@ h3{
     position: relative;
     display: flex;
 }
-
+@media screen and (max-width: 600px) {
+    .bannerspace{
+        height: 25dvh;
+    }
+}
 .banners{
     position: absolute;
     top: 0%;
