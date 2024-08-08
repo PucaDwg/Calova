@@ -274,12 +274,7 @@ h3{
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
     right: 0;
-    margin-right: 20px;
-}
-
-#porttitle{
-    top: 50%;
-    right: 12%;
+    margin-right: 25px;
 }
 
 .headtitles{
@@ -296,6 +291,7 @@ h3{
 
 #headtitleportfolio{
     background-color:darkred;
+    height: 23dvh;
 }
 
 
@@ -311,6 +307,7 @@ h3{
 
 #contentportfolio {
     width: 65%;
+    margin-top: 10px;
     height: 90%;
     left: 17.5%;
     background-color: #ec426480;
@@ -318,7 +315,7 @@ h3{
 
 #contentemployee{
     border-radius: 10px;
-    width: 66dvw;
+    width: 67dvw;
     height: 10dvh;
     left: 16%;
     background-color:rgba(164, 0, 170, 0.295);
@@ -328,7 +325,6 @@ h3{
 .icons{
     width: 12%;
     height: 19%;
-    position:absolute;
     left:10%;
     transition: transform .1s ease-in-out;
 }
@@ -336,9 +332,9 @@ h3{
 .icons:hover{
     width: 12.5%;
     height: 19.5%;
-    position:absolute;
     left:10%;
     transform: rotate(3deg);
+    cursor: pointer;
 }
 
 .dreamonname{
@@ -404,9 +400,9 @@ h3{
 
 .producttitle{
     font-family: 'Times New Roman', Times, bold;
-    font-size: 1.5vw;
-    position: absolute;
+    font-size: clamp(1.2rem,1rem,2rem);
     left:26%;
+    margin-left: 10px;
     z-index: 4;
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
@@ -430,9 +426,10 @@ h3{
 
 .itemdesc{
     font-family: 'Times New Roman', Times, bold;
-    font-size: 1.1vw;
-    position: absolute;
+    font-size: clamp(1.2rem,1rem,2rem);
+    text-wrap: pretty;
     left:23%;
+    margin-left: 10px;
     color: white;
     text-shadow: 4px 4px 2px rgba(27, 0, 0, 0.6);
     padding-right: 7%;
@@ -484,6 +481,7 @@ h3{
     transition: .5s;
     width: 100%;
     height: 17.7%;
+    cursor: pointer;
 }
 
 #entry00{
